@@ -1,12 +1,13 @@
 package Backend;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by cheng on 2017/1/7.
  */
 
-public class Interpreter {
+public class Interpreter implements Serializable{
     private ArrayList<Task> tasks;
     private ArrayList<Task> pastTasks;
     private ArrayList<Desire> pastDesires;
