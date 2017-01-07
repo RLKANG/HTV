@@ -27,4 +27,5 @@
     <string name="Desire5">Desire 5</string>
     <string name="DesireShop">Desire Shop</string>
     <string name="newdesire">new Desire</string>
+    <string name="negativePoints">Points can not be negative</string>
 </resources>
