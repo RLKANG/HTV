@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">HTV</string>
+    <string name="app_name">Calendar</string>
+    <string name="HOME">HOME</string>
+    <string name="ADD">ADD</string>
+    <string name="CP">Current Points: </string>
+    <string name="Points">Points</string>
+    <string name="Point">Points: </string>
+    <string name="Task">Task: </string>
+    <string name="Task1">Task 1</string>
+    <string name="Task2">Task 2</string>
+    <string name="Task3">Task 3</string>
+    <string name="Task4">Task 4</string>
+    <string name="Task5">Task 5</string>
+    <string name="newtask">new Task</string>
+    <string name="newpoints">new Points</string>
+    <string name="Point1">Point 1</string>
+    <string name="Point2">Point 2</string>
+    <string name="Point3">Point 3</string>
+    <string name="Point4">Point 4</string>
+    <string name="Point5">Point 5</string>
+    <string name="Desire">Desire: </string>
+    <string name="Desire1">Desire 1</string>
+    <string name="Desire2">Desire 2</string>
+    <string name="Desire3">Desire 3</string>
+    <string name="Desire4">Desire 4</string>
+    <string name="Desire5">Desire 5</string>
+    <string name="newdesire">new Desire</string>
 </resources>
