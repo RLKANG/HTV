@@ -28,4 +28,6 @@
     <string name="DesireShop">Desire Shop</string>
     <string name="newdesire">new Desire</string>
     <string name="negativePoints">Points can not be negative</string>
+    <string name="edit">Edit</string>
+    <string name = "taskModified">Task Modified</string>
 </resources>

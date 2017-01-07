@@ -18,6 +18,9 @@ public class Interpreter implements Serializable{
         desires=new ArrayList<Desire>();
         point=0;
     }
+    public Task getTask(int index){
+        return tasks.get(index);
+    }
     public void addTask(String name, int point){
         Task task =new Task(name, point);
         tasks.add(task);

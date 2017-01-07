@@ -13,6 +13,7 @@ public class Task {
         this.name=name;
         this.point=point;
         completed=false;
+        note="";
     }
     public int complete(){
         completed = true;
