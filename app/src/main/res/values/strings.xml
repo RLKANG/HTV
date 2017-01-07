@@ -5,6 +5,7 @@
     <string name="CP">Current Points: </string>
     <string name="Points">Points</string>
     <string name="Point">Points: </string>
+    <string name="Tasks">Tasks</string>
     <string name="Task">Task: </string>
     <string name="Task1">Task 1</string>
     <string name="Task2">Task 2</string>
@@ -24,5 +25,6 @@
     <string name="Desire3">Desire 3</string>
     <string name="Desire4">Desire 4</string>
     <string name="Desire5">Desire 5</string>
+    <string name="DesireShop">Desire Shop</string>
     <string name="newdesire">new Desire</string>
 </resources>

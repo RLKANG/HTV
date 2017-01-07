@@ -45,6 +45,7 @@
     <TextView
         android:id="@+id/Task1"
         android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_below="@+id/Home"
@@ -55,6 +56,7 @@
     <TextView
         android:id="@+id/Point1"
         android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_below="@+id/Home"
@@ -176,7 +178,6 @@
         android:layout_below="@+id/Task5"
         android:text="@string/newtask"
         android:textSize="18sp"
-        android:focusable="false"
         android:onClick="Set"/>
 
     <TextView
@@ -203,7 +204,6 @@
         android:layout_below="@+id/Task"
         android:text="@string/newpoints"
         android:textSize="18sp"
-        android:focusable="false"
         android:onClick="Set"/>
 
     <Button

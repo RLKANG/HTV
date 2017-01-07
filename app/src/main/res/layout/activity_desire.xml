@@ -176,7 +176,6 @@
         android:layout_below="@+id/Desire5"
         android:text="@string/newdesire"
         android:textSize="18sp"
-        android:focusable="false"
         android:onClick="Set"/>
 
     <TextView
@@ -203,7 +202,6 @@
         android:layout_below="@+id/Desire"
         android:text="@string/newpoints"
         android:textSize="18sp"
-        android:focusable="false"
         android:onClick="Set"/>
 
     <Button

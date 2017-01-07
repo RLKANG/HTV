@@ -15,15 +15,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
-        android:text="Tasks"
-        android:onClick="viewTasksPage"/>
+        android:text="@string/Tasks"
+        android:onClick="viewTasks"/>
     <Button
         android:id="@+id/DesireShopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_below="@id/TasksButton"
-        android:text="Desire Shop"
+        android:text="@string/DesireShop"
         android:layout_centerHorizontal="true"
-        android:onClick="viewDesiresPage"/>
+        android:onClick="viewDesires"/>
 </RelativeLayout>
