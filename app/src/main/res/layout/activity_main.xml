@@ -11,19 +11,22 @@
     tools:context="com.example.richard.htv.MainActivity">
     <Button
         android:id="@+id/TasksButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
         android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_light"
         android:text="@string/Tasks"
         android:onClick="viewTasks"/>
+
     <Button
         android:id="@+id/DesireShopButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="75dp"
         android:layout_below="@id/TasksButton"
         android:text="@string/DesireShop"
         android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_light"
         android:onClick="viewDesires"/>
 </RelativeLayout>
