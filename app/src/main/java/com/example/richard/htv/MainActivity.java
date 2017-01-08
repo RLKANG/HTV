@@ -13,7 +13,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        interpreter=new Interpreter();
+        try{
+            Intent intent = getIntent();
+            interpreter = (Interpreter) intent.getSerializableExtra("interpreter");
+        }catch (Exception e){
+            interpreter = new Interpreter();
+        }
     }
 
     public void viewTasks(View view){

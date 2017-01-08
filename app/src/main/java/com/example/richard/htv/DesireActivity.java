@@ -78,6 +78,7 @@ public class DesireActivity extends AppCompatActivity {
 
     public void Go_Home(View view) {
         Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("interpreter",interpreter);
         startActivity(intent);
     }
 }

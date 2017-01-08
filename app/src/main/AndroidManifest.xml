@@ -18,7 +18,8 @@
         <activity android:name=".TaskActivity" />
         <activity android:name=".DesireActivity" />
         <activity android:name=".EditTask" />
-        <activity android:name=".LinearTry"></activity>
+        <activity android:name=".LinearTry" />
+        <activity android:name=".EditDesire"></activity>
     </application>
 
 </manifest>
