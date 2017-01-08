@@ -10,14 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.richard.htv.EditDesire">
     <EditText
-        android:id="@+id/editTaskName"
+        android:id="@+id/editDesireName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         />
     <EditText
-        android:id="@+id/editTaskPoint"
+        android:id="@+id/editDesirePoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTaskName"
