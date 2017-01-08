@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/Home"
-        android:text="@string/Desire1"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -60,7 +60,7 @@
         android:layout_below="@+id/Home"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point1"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/Desire1"
-        android:text="@string/Desire2"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -82,7 +82,7 @@
         android:layout_below="@+id/Point1"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point2"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/Desire2"
-        android:text="@string/Desire3"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -104,7 +104,7 @@
         android:layout_below="@+id/Point2"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point3"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/Desire3"
-        android:text="@string/Desire4"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -126,7 +126,7 @@
         android:layout_below="@+id/Point3"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point4"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -136,7 +136,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/Desire4"
-        android:text="@string/Desire5"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -148,7 +148,7 @@
         android:layout_below="@+id/Point4"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point5"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -174,8 +174,9 @@
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_below="@+id/Desire5"
-        android:text="@string/newdesire"
+        android:hint="@string/newdesire"
         android:textSize="18sp"
+        android:imeOptions="actionDone"
         android:onClick="Set" />
 
     <TextView
@@ -200,8 +201,9 @@
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_below="@+id/Desire"
-        android:text="@string/newpoints"
+        android:hint="@string/newpoints"
         android:textSize="18sp"
+        android:imeOptions="actionDone"
         android:onClick="Set"/>
 
     <Button

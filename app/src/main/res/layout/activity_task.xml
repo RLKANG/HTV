@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/Home"
-        android:text="@string/Task1"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -65,7 +65,7 @@
         android:layout_alignBaseline="@id/Task1"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point1"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/Task1"
-        android:text="@string/Task2"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -86,7 +86,7 @@
         android:layout_alignBaseline="@id/Task2"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point2"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -96,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/Task2"
-        android:text="@string/Task3"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -107,7 +107,7 @@
         android:layout_alignBaseline="@id/Task3"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point3"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/Task3"
-        android:text="@string/Task4"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -128,7 +128,7 @@
         android:layout_alignBaseline="@id/Task4"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point4"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -138,7 +138,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/Task4"
-        android:text="@string/Task5"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -149,10 +149,9 @@
         android:layout_alignBaseline="@id/Task5"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:text="@string/Point5"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"/>
-
 
     <TextView
         android:id="@+id/Task"
@@ -176,8 +175,9 @@
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_below="@+id/Task5"
-        android:text="@string/newtask"
+        android:hint="@string/newtask"
         android:textSize="18sp"
+        android:imeOptions="actionDone"
         android:onClick="Set"/>
 
     <TextView
@@ -202,8 +202,9 @@
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_below="@+id/Task"
-        android:text="@string/newpoints"
+        android:hint="@string/newpoints"
         android:textSize="18sp"
+        android:imeOptions="actionDone"
         android:onClick="Set"/>
 
     <Button
