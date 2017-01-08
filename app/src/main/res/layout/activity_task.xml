@@ -49,6 +49,7 @@
         android:layout_marginTop="40dp"
         android:layout_below="@+id/Home"
         android:text=""
+        android:visibility="invisible"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -70,6 +71,7 @@
         android:layout_marginTop="5dp"
         android:layout_below="@+id/Task1"
         android:text=""
+        android:visibility="invisible"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -91,6 +93,7 @@
         android:layout_marginTop="5dp"
         android:layout_below="@+id/Task2"
         android:text=""
+        android:visibility="invisible"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -112,6 +115,7 @@
         android:layout_marginTop="5dp"
         android:layout_below="@+id/Task3"
         android:text=""
+        android:visibility="invisible"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -133,6 +137,7 @@
         android:layout_marginTop="5dp"
         android:layout_below="@+id/Task4"
         android:text=""
+        android:visibility="invisible"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
