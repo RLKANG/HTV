@@ -64,6 +64,18 @@
         android:textSize="20sp"
         android:textStyle="bold"/>
 
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/TasksButton"
+        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:onClick="popUp"/>
+
     <TextView
         android:id="@+id/Point1"
         android:layout_width="wrap_content"
@@ -85,6 +97,18 @@
         android:visibility="invisible"
         android:textSize="20sp"
         android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/Task1"
+        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:onClick="popUp"/>
 
     <TextView
         android:id="@+id/Point2"
@@ -108,6 +132,18 @@
         android:textSize="20sp"
         android:textStyle="bold"/>
 
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/Task2"
+        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:onClick="popUp"/>
+
     <TextView
         android:id="@+id/Point3"
         android:layout_width="wrap_content"
@@ -130,6 +166,18 @@
         android:textSize="20sp"
         android:textStyle="bold"/>
 
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/Task3"
+        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:onClick="popUp"/>
+
     <TextView
         android:id="@+id/Point4"
         android:layout_width="wrap_content"
@@ -151,6 +199,18 @@
         android:visibility="invisible"
         android:textSize="20sp"
         android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Button5"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/Task4"
+        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:onClick="popUp"/>
 
     <TextView
         android:id="@+id/Point5"

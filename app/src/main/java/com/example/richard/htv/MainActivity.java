@@ -1,6 +1,8 @@
 package com.example.richard.htv;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -173,6 +175,64 @@ public class MainActivity extends AppCompatActivity {
             CheckBox cb = (CheckBox) findViewById(R.id.Task5);
             cb.setChecked(false);
         }
+    }
+
+    public void popUp (View view) {
+        final int n = getindex(view);
+        if (td) {
+            if (task_count <= n) {
+                return;
+            }
+        }
+        else {
+            if (desire_count <= n) {
+                return;
+            }
+        }
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Write Note");
+        final EditText input = new EditText(this);
+        alert.setView(input);
+        if (td) {
+            input.setText(interpreter.getTask(n).getNote());
+        }
+        else {
+            input.setText(interpreter.getDesire(n).getNote());
+        }
+        alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                String value = input.getText().toString();
+                if (td) {
+                    interpreter.getTask(n).setNote(value);
+                }
+                else {
+                    interpreter.getDesire(n).setNote(value);
+                }
+            }
+        });
+        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                // Canceled.
+            }
+        });
+
+        alert.show();
+    }
+
+    public int getindex(View view) {
+        int ind;
+        if (view.getId() == R.id.Button1) {
+            ind = 0;
+        } else if (view.getId() == R.id.Button2) {
+            ind = 1;
+        } else if (view.getId() == R.id.Button3) {
+            ind = 2;
+        } else if (view.getId() == R.id.Button4) {
+            ind = 3;
+        } else {
+            ind = 4;
+        }
+        return ind;
     }
 
     public void Set (View view) {
