@@ -2,10 +2,12 @@ package com.example.richard.htv;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -20,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private Interpreter interpreter;
     private int task_count = 0;
     private int desire_count = 0;
-    private int num_points = 0;
     private boolean td = true; //true for task, false for desire
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,6 +153,10 @@ public class MainActivity extends AppCompatActivity {
                 uncheck(4);
             }
         });
+        Button b1 = (Button) findViewById(R.id.TasksButton);
+        b1.setBackgroundColor(Color.GREEN);
+        Button b2 = (Button) findViewById(R.id.DesireShopButton);
+        b2.setBackgroundColor(Color.GRAY);
     }
 
     public void uncheck (int i) {
@@ -304,7 +309,9 @@ public class MainActivity extends AppCompatActivity {
                 ++task_count;
             }
         }
-        //else toast??
+        else {
+            Toast.makeText(this, getString(R.string.max), Toast.LENGTH_SHORT).show();
+        }
         ((EditText) findViewById(R.id.newTD)).setText("");
         ((EditText) findViewById(R.id.newPoints)).setText("");
     }
@@ -366,7 +373,9 @@ public class MainActivity extends AppCompatActivity {
                 ++desire_count;
             }
         }
-        //else toast??
+        else {
+            Toast.makeText(this, getString(R.string.max), Toast.LENGTH_SHORT).show();
+        }
         ((EditText) findViewById(R.id.newTD)).setText("");
         ((EditText) findViewById(R.id.newPoints)).setText("");
     }
@@ -376,9 +385,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void view_tasks () {
+        Button b1 = (Button) findViewById(R.id.TasksButton);
+        b1.setBackgroundColor(Color.GREEN);
+        Button b2 = (Button) findViewById(R.id.DesireShopButton);
+        b2.setBackgroundColor(Color.GRAY);
         if (!td) {
             TextView td = (TextView) findViewById(R.id.TD);
-            String s = "Task";
+            String s = "Task: ";
             td.setText(s);
             setInvisible();
             System.out.println(task_count);
@@ -432,9 +445,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void view_desires () {
+        Button b1 = (Button) findViewById(R.id.TasksButton);
+        b1.setBackgroundColor(Color.GRAY);
+        Button b2 = (Button) findViewById(R.id.DesireShopButton);
+        b2.setBackgroundColor(Color.GREEN);
         if (td) {
             TextView td = (TextView) findViewById(R.id.TD);
-            String s = "Desire";
+            String s = "Desire: ";
             td.setText(s);
             setInvisible();
             if (desire_count > 0) {

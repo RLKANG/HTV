@@ -14,7 +14,6 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginTop="0dp"
-        android:background="@android:color/holo_blue_dark"
         android:text="@string/Tasks"
         android:onClick="viewTasks"/>
 
@@ -25,7 +24,6 @@
         android:layout_marginTop="0dp"
         android:layout_marginLeft="170dp"
         android:layout_marginStart="170dp"
-        android:background="@android:color/holo_green_dark"
         android:text="@string/DesireShop"
         android:onClick="viewDesires"/>
 
@@ -51,6 +49,7 @@
         android:layout_below="@+id/TasksButton"
         android:text="@string/Points"
         android:textSize="15sp"
+        android:textColor="@android:color/background_dark"
         android:textStyle="bold"/>
 
     <CheckBox
@@ -85,6 +84,7 @@
         android:layout_marginLeft="220dp"
         android:text=""
         android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
         android:textStyle="bold"/>
 
     <CheckBox
@@ -119,6 +119,7 @@
         android:layout_marginLeft="220dp"
         android:text=""
         android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
         android:textStyle="bold"/>
 
     <CheckBox
@@ -153,6 +154,7 @@
         android:layout_marginLeft="220dp"
         android:text=""
         android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
         android:textStyle="bold"/>
 
     <CheckBox
@@ -187,6 +189,7 @@
         android:layout_marginLeft="220dp"
         android:text=""
         android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
         android:textStyle="bold"/>
 
     <CheckBox
@@ -221,6 +224,7 @@
         android:layout_marginLeft="220dp"
         android:text=""
         android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
         android:textStyle="bold"/>
 
     <TextView
@@ -283,7 +287,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/newTD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:text="@string/ADD"
+        android:background="@android:color/holo_blue_light"
         android:onClick="Add"/>
 </RelativeLayout>

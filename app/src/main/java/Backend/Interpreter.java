@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 public class Interpreter implements Serializable{
     private ArrayList<Task> tasks;
-    private ArrayList<Task> pastTasks;
-    private ArrayList<Desire> pastDesires;
+    //private ArrayList<Task> pastTasks;
+    //private ArrayList<Desire> pastDesires;
     private ArrayList<Desire> desires;
     private int point;
     public Interpreter(){

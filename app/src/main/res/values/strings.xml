@@ -5,7 +5,7 @@
     <string name="CP">Current Points: </string>
     <string name="Points">0</string>
     <string name="Point">Points: </string>
-    <string name="Tasks">Tasks</string>
+    <string name="Tasks">Tasks </string>
     <string name="Task">Task: </string>
     <string name="newtask">new Task</string>
     <string name="newpoints">new Points</string>
@@ -15,7 +15,9 @@
     <string name="newdesire">new Desire</string>
     <string name="negativePoints">Points can not be negative</string>
     <string name="invalidInput">Invalid Input</string>
+    <string name="notEnough">Insufficient points</string>
     <string name="edit">Edit</string>
+    <string name="max">Maximum number of entries</string>
     <string name="taskModified">Task Modified</string>
     <string name="title_activity_linear_try">linearTry</string>
     <string name="large_text">
