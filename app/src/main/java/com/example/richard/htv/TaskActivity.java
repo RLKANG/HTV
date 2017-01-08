@@ -19,9 +19,6 @@ public class TaskActivity extends AppCompatActivity {
         interpreter = (Interpreter) intent.getSerializableExtra("interpreter");
     }
 
-    public void Set(View view) {
-
-    }
 
     public void Add(View view) {
         String name = ((EditText) findViewById(R.id.newTask)).getText().toString();
