@@ -18,8 +18,12 @@ public class Interpreter implements Serializable{
         desires=new ArrayList<Desire>();
         point=0;
     }
+    public int getPoint() { return point; }
     public Task getTask(int index){
         return tasks.get(index);
+    }
+    public Desire getDesire(int index){
+        return desires.get(index);
     }
     public void addTask(String name, int point){
         Task task =new Task(name, point);
@@ -27,14 +31,14 @@ public class Interpreter implements Serializable{
     }
     public void completeTask(int index){
         point+=tasks.get(index).complete();
-        pastTasks.add(tasks.get(index));
+        //pastTasks.add(tasks.get(index));
         tasks.remove(index);
     }
     public void satisfiedDesire(int index){
         point-=desires.get(index).satisfied();
-        if(desires.get(index).getTimes()<=0){
+        //if(desires.get(index).getTimes()<=0){
             desires.remove(index);
-        }
+        //}
     }
     public void addDesire(String name,int point){
         Desire desire = new Desire(name, point);

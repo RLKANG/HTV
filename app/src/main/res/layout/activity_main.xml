@@ -11,22 +11,219 @@
     tools:context="com.example.richard.htv.MainActivity">
     <Button
         android:id="@+id/TasksButton"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="25dp"
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/holo_green_light"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_blue_dark"
         android:text="@string/Tasks"
         android:onClick="viewTasks"/>
 
     <Button
         android:id="@+id/DesireShopButton"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="75dp"
-        android:layout_below="@id/TasksButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginStart="170dp"
+        android:background="@android:color/holo_green_dark"
         android:text="@string/DesireShop"
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/holo_blue_light"
         android:onClick="viewDesires"/>
+
+    <TextView
+        android:id="@+id/CurrentPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/TasksButton"
+        android:text="@string/CP"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/NumPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_below="@+id/TasksButton"
+        android:text="@string/Points"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/Task1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/TasksButton"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Point1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Task1"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/Task2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/Task1"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Point2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Task2"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/Task3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/Task2"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Point3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Task3"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/Task4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/Task3"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Point4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Task4"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/Task5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/Task4"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Point5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Task5"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/TD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/Task5"
+        android:text="@string/Task"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/newTD"
+        android:inputType="text"
+        android:labelFor="@+id/Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/Task5"
+        android:hint="@string/enterHere"
+        android:textSize="18sp"
+        android:imeOptions="actionDone"
+        android:onClick="Set"/>
+
+    <TextView
+        android:id="@+id/Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/TD"
+        android:text="@string/Point"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/newPoints"
+        android:inputType="number"
+        android:labelFor="@+id/TD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/TD"
+        android:hint="@string/enterHere"
+        android:textSize="18sp"
+        android:imeOptions="actionDone"
+        android:onClick="Set"/>
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/ADD"
+        android:onClick="Add"/>
 </RelativeLayout>

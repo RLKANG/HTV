@@ -9,8 +9,9 @@
     <string name="Task">Task: </string>
     <string name="newtask">new Task</string>
     <string name="newpoints">new Points</string>
+    <string name="enterHere">enter here</string>
     <string name="Desire">Desire: </string>
-    <string name="DesireShop">Desire Shop</string>
+    <string name="DesireShop">Desires</string>
     <string name="newdesire">new Desire</string>
     <string name="negativePoints">Points can not be negative</string>
     <string name="invalidInput">Invalid Input</string>
