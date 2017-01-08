@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calendar</string>
+    <string name="app_name">Motivation Calendar</string>
     <string name="HOME">HOME</string>
     <string name="ADD">ADD</string>
     <string name="CP">Current Points: </string>

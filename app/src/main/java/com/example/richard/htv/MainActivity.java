@@ -37,44 +37,143 @@ public class MainActivity extends AppCompatActivity {
                 if (td) {
                     interpreter.completeTask(0);
                     --task_count;
-                    viewTasks();
+                    td = false;
+                    view_tasks();
                 }
                 else {
-                    interpreter.satisfiedDesire(0);
-                    --desire_count;
-                    viewDesires();
+                    if ((interpreter.getPoint() - interpreter.getDesire(0).getPoint()) >= 0) {
+                        interpreter.satisfiedDesire(0);
+                        --desire_count;
+                    }
+                    td = true;
+                    view_desires();
                 }
                 TextView tv = (TextView) findViewById(R.id.NumPoints);
                 int p = interpreter.getPoint();
                 tv.setText(String.valueOf(p));
+                uncheck(0);
             }
         });
         CheckBox cb2 = (CheckBox) findViewById(R.id.Task2);
         cb2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                System.out.println("2");
+                setInvisible();
+                if (td) {
+                    interpreter.completeTask(1);
+                    --task_count;
+                    td = false;
+                    view_tasks();
+                }
+                else {
+                    if ((interpreter.getPoint() - interpreter.getDesire(0).getPoint()) >= 0) {
+                        interpreter.satisfiedDesire(1);
+                        --desire_count;
+                    }
+                    td = true;
+                    view_desires();
+                }
+                TextView tv = (TextView) findViewById(R.id.NumPoints);
+                int p = interpreter.getPoint();
+                tv.setText(String.valueOf(p));
+                uncheck(1);
             }
         });
         CheckBox cb3 = (CheckBox) findViewById(R.id.Task3);
         cb3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                System.out.println("3");
+                setInvisible();
+                if (td) {
+                    interpreter.completeTask(2);
+                    --task_count;
+                    td = false;
+                    view_tasks();
+                }
+                else {
+                    if ((interpreter.getPoint() - interpreter.getDesire(0).getPoint()) >= 0) {
+                        interpreter.satisfiedDesire(2);
+                        --desire_count;
+                    }
+                    td = true;
+                    view_desires();
+                }
+                TextView tv = (TextView) findViewById(R.id.NumPoints);
+                int p = interpreter.getPoint();
+                tv.setText(String.valueOf(p));
+                uncheck(2);
             }
         });
         CheckBox cb4 = (CheckBox) findViewById(R.id.Task4);
         cb4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                System.out.println("4");
+                setInvisible();
+                if (td) {
+                    interpreter.completeTask(3);
+                    --task_count;
+                    td = false;
+                    view_tasks();
+                }
+                else {
+                    if ((interpreter.getPoint() - interpreter.getDesire(0).getPoint()) >= 0) {
+                        interpreter.satisfiedDesire(3);
+                        --desire_count;
+                    }
+                    td = true;
+                    view_desires();
+                }
+                TextView tv = (TextView) findViewById(R.id.NumPoints);
+                int p = interpreter.getPoint();
+                tv.setText(String.valueOf(p));
+                uncheck(3);
             }
         });
         CheckBox cb5 = (CheckBox) findViewById(R.id.Task5);
         cb5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                System.out.println("5");
+                setInvisible();
+                if (td) {
+                    interpreter.completeTask(4);
+                    --task_count;
+                    td = false;
+                    view_tasks();
+                }
+                else {
+                    if ((interpreter.getPoint() - interpreter.getDesire(0).getPoint()) >= 0) {
+                        interpreter.satisfiedDesire(4);
+                        --desire_count;
+                    }
+                    td = true;
+                    view_desires();
+                }
+                TextView tv = (TextView) findViewById(R.id.NumPoints);
+                int p = interpreter.getPoint();
+                tv.setText(String.valueOf(p));
+                uncheck(4);
             }
         });
     }
 
+    public void uncheck (int i) {
+        if (i == 0) {
+            CheckBox cb = (CheckBox) findViewById(R.id.Task1);
+            cb.setChecked(false);
+        }
+        if (i == 1) {
+            CheckBox cb = (CheckBox) findViewById(R.id.Task2);
+            cb.setChecked(false);
+        }
+        if (i == 2) {
+            CheckBox cb = (CheckBox) findViewById(R.id.Task3);
+            cb.setChecked(false);
+        }
+        if (i == 3) {
+            CheckBox cb = (CheckBox) findViewById(R.id.Task4);
+            cb.setChecked(false);
+        }
+        if (i == 4) {
+            CheckBox cb = (CheckBox) findViewById(R.id.Task5);
+            cb.setChecked(false);
+        }
+    }
 
     public void Set (View view) {
     }
@@ -212,12 +311,17 @@ public class MainActivity extends AppCompatActivity {
         ((EditText) findViewById(R.id.newPoints)).setText("");
     }
 
-    public void viewTasks () {
+    public void viewTasks(View view) {
+        view_tasks();
+    }
+
+    public void view_tasks () {
         if (!td) {
             TextView td = (TextView) findViewById(R.id.TD);
             String s = "Task";
             td.setText(s);
             setInvisible();
+            System.out.println(task_count);
             if (task_count > 0) {
                 Task t = interpreter.getTask(0);
                 TextView txtname = (TextView) findViewById(R.id.Task1);
@@ -263,7 +367,11 @@ public class MainActivity extends AppCompatActivity {
         td = true;
     }
 
-    public void viewDesires () {
+    public void viewDesires(View view) {
+        view_desires();
+    }
+
+    public void view_desires () {
         if (td) {
             TextView td = (TextView) findViewById(R.id.TD);
             String s = "Desire";
