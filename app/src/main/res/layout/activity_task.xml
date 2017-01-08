@@ -41,13 +41,7 @@
         android:text="@string/Points"
         android:textSize="15sp"
         android:textStyle="bold"/>
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/CurrentPoints"
-        >
-        
-    </ListView>
+
     <CheckBox
         android:id="@+id/Task1"
         android:layout_width="wrap_content"
