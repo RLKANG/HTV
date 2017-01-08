@@ -21,6 +21,8 @@ public class TaskActivity extends AppCompatActivity {
         interpreter = (Interpreter) intent.getSerializableExtra("interpreter");
     }
 
+    public void Set(View view) {
+    }
 
     public void Add(View view) {
         //Point in task and desire class are the same???
