@@ -1,5 +1,4 @@
-# HTV
-Motivation Calendar
+# Motivation Calendar
 
 Inspiration:
 Sometimes it can be hard to beat procrastination. 
